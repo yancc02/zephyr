@@ -1,0 +1,26 @@
+# Kconfig.imx_epit - IMX EPIT configuration options
+#
+# Copyright (c) 2018, NXP
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config TIMER_IMX_EPIT
+	bool "IMX EPIT driver"
+	depends on COUNTER && HAS_IMX_EPIT
+	help
+	  Enable the IMX EPIT driver.
+
+if TIMER_IMX_EPIT
+
+config TIMER_IMX_EPIT_1
+	bool "Timer 1"
+	help
+	  Enable Timer 1.
+
+config TIMER_IMX_EPIT_2
+	bool "Timer 2"
+	help
+	  Enable Timer 2.
+
+endif # TIMER_IMX_EPIT

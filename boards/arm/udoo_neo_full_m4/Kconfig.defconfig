@@ -57,4 +57,14 @@ config GPIO_IMX_PORT_7
 
 endif # GPIO_IMX
 
+if TIMER_IMX_EPIT
+
+config TIMER_IMX_EPIT_1
+	def_bool y
+
+config TIMER_IMX_EPIT_2
+	def_bool y
+
+endif # TIMER_IMX_EPIT
+
 endif # BOARD_UDOO_NEO_FULL_M4

@@ -39,4 +39,11 @@ config IPM_IMX
 
 endif # IPM
 
+if COUNTER
+
+config TIMER_IMX_EPIT
+	def_bool y
+
+endif # COUNTER
+
 endif # SOC_MCIMX6X_M4
