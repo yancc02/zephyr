@@ -25,7 +25,6 @@ Sample Output
 
 .. code-block:: console
 
-    Hello World! x86
     EPIT sample app is starting...
     counter started 0
     EPIT clock frequency is 1000
