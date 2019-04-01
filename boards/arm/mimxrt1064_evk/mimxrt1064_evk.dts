@@ -95,6 +95,8 @@
 
 arduino_i2c: &i2c1 {};
 
+arduino_serial: &uart3 {};
+
 &lcdif1 {
 	status = "okay";
 	port {
